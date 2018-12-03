@@ -3,6 +3,7 @@
 ## Usage
 
 ```
+>> npm i
 >> caddy
 >> cd data
 >> node index.js
