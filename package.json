@@ -1,0 +1,26 @@
+{
+  "name": "colorhub",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "yunfengzhang.zyf <yunfengzhang.zyf@alibaba-inc.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/colorHub.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "data_server": "cd data && node index.js && cd .. ",
+    "start": "npm run data_server& && caddy"
+  },
+  "dependencies": {
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0"
+  }
+}
